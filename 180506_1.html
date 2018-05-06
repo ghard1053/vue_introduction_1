@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>My Vue App</title>
+  <!-- <link rel="stylesheet" href="index.css"> -->
+</head>
+<body>
+
+  <h1>Hello Vue !!</h1>
+  <div id="app">
+
+    <item content="hello"></item>
+
+    <h2>
+      奇数
+    </h2>
+    <ul v-for="num of odd">
+      <li>{{ num }}</li>
+    </ul>
+    <h2>
+      偶数
+    </h2>
+    <ul v-for="num of even">
+      <li>{{ num }}</li>
+    </ul>
+
+
+<!--     <div v-on:click="showAlert">
+      アラート
+    </div>
+
+    <div v-on:click="increment">
+      increment
+    </div>
+    {{ count }}
+
+    <textarea v-model="text"></textarea>
+    <p>
+      {{ text }}
+    </p>
+
+    <input v-model="text">
+    <p>
+      {{ text }}
+    </p>
+
+    <input type="checkbox" id="kongou" value="Kongou" v-model="checkedNames">
+    <label for="kongou">Kongou</label>
+    <input type="checkbox" id="hiei" value="Hiei" v-model="checkedNames">
+    <label for="hiei">Hiei</label>
+    <input type="checkbox" id="haruna" value="Haruna" v-model="checkedNames">
+    <label for="haruna">Haruna</label>
+    <input type="checkbox" id="kirishima" value="Kirishima" v-model="checkedNames">
+    <label for="kirishima">Kirishima</label>
+    <br>
+    <span>{{ checkedNames }}</span>
+    <br>
+
+    <input type="radio" id="fm" value="FM" v-model="modulation">
+    <label for="fm">FM</label>
+    <br>
+    <input type="radio" id="am" value="AM" v-model="modulation">
+    <label for="am">AM</label>
+    <br>
+    <span>Modulation: {{ modulation }}</span>
+    <br>
+
+    <select v-model="hisyo">
+      <option disabled value="">秘書を選んでください</option>
+      <option>金剛</option>
+      <option>比叡</option>
+      <option>榛名</option>
+      <option>霧島</option>
+    </select>
+    <span>秘書：{{ hisyo }}</span>
+    <br>
+
+    <select v-model="kantai" multiple>
+      <option disabled value="">秘書を選んでください</option>
+      <option>金剛</option>
+      <option>比叡</option>
+      <option>榛名</option>
+      <option>霧島</option>
+    </select>
+    <span>秘書：{{ kantai }}</span>
+    <br>
+
+    <div v-show="showFlg">
+      AAA
+    </div>
+    <div v-if="showFlg">
+      表示されない
+    </div>
+    <div v-else>
+      表示される
+    </div>
+    <div>
+      <h2>
+        array
+      </h2>
+      <ul v-for="(item, index) in array">
+        <li>
+          {{ item }} - {{ index }}
+        </li>
+      </ul>
+      <h2>
+        Object
+      </h2>
+      <ul v-for="(val, key, index) in object">
+        <li>
+          {{ val }} - {{ key }} - {{ index }}
+        </li>
+      </ul>
+      <h2>
+        number
+      </h2>
+      <ul v-for="(num, index) in number">
+        <li>
+          {{ num }} - {{ index }}
+        </li>
+      </ul>
+      <h2>
+        string
+      </h2>
+      <ul v-for="(char, index) in string">
+        <li>
+          {{ char }} - {{ index }}
+        </li>
+      </ul>
+    </div> -->
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="180506_1.js"></script>
+</body>
+</html>
